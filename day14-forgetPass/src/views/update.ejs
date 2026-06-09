@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>userId <%= userId %></h3>
+    <form action="http://localhost:3000/api/auth/update-password/<%=userId%>" method="POST">
+        <input name="password" type="text" placeholder="New password">
+        <input type="text" placeholder="Confirm password">
+        <button>Update</button>
+    </form>
+</body>
+</html>
